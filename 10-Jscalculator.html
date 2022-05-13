@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+      function colorchange(id)
+       {
+   var background,Image
+   background=document.getElementById('select').style.backgroundColor;
+
+if (background == "red") 
+{
+document.getElementById(id).style.background="green"
+
+}
+else
+{
+document.getElementById(id).style.background="red";
+}
+}
+function overlap() 
+{
+if (document.getElementById('2').src.match("https://cdn.discordapp.com/attachments/765475942524911626/813265415136083978/Screen_Shot_2021-02-22_at_9.png")) 
+{
+document.getElementById('2').src = "https://cdn.discordapp.com/attachments/765475942524911626/785015394108440576/Minecraft_06-12-2020_10_59_26_2.png";
+}
+else if (document.getElementById('2').src.match("https://cdn.discordapp.com/attachments/765475942524911626/785015394108440576/Minecraft_06-12-2020_10_59_26_2.png"))
+{
+document.getElementById('2').src = "https://cdn.discordapp.com/attachments/765475942524911626/900270258676445194/Screen_Shot_2021-10-12_at_10.51.50_AM.png";
+}
+else if (document.getElementById('2').src.match("https://cdn.discordapp.com/attachments/765475942524911626/900270258676445194/Screen_Shot_2021-10-12_at_10.51.50_AM.png"))
+{ 
+  document.getElementById('2').src = ("https://cdn.discordapp.com/attachments/765475942524911626/813265415136083978/Screen_Shot_2021-02-22_at_9.png")
+}
+document.getElementById('yes').value="no problem click this button again to display another image"
+}
+        
+function clear()
+{
+  document.getElementById('yes').value=''
+}
+
+
+    </script>
+</head>
+<body id="backywhacky">
+      <center>
+        <h1>Random colors ¯\_(ツ)_/¯</h1>
+        <input type="button" value="Click for color change" id="select"
+        onclick="colorchange('select')" style="width:100%; height:100px"/>
+        
+        </center>
+        <center>
+          <h1>Overlapping Image</h1>
+          <p align="center"><img src="https://cdn.discordapp.com/attachments/765475942524911626/813265415136083978/Screen_Shot_2021-02-22_at_9.png" width="300" height="200"
+          id="2"></img></p>
+
+          </center>
+    
+        <center>
+          <h1>Calculator Program</h1>
+<form id="f">
+<input type="button" value="7" size="25" onclick="f.t.value+='7'"/>&nbsp&nbsp
+<input type="button" value="8" size="25" onclick="f.t.value+='8'"/>&nbsp&nbsp
+<input type="button" value="9" size="25" onclick="f.t.value+='9'"/>&nbsp&nbsp
+<input type="button" value="/" size="25" onclick="f.t.value+='/'"/><br><br>
+<input type="button" value="4" size="25" onclick="f.t.value+='4'"/>&nbsp&nbsp
+<input type="button" value="5" size="25" onclick="f.t.value+='5'"/>&nbsp&nbsp
+<input type="button" value="6" size="25" onclick="f.t.value+='6'"/>&nbsp&nbsp
+<input type="button" value="*" size="25" onclick="f.t.value+='*'"/><br><br>
+<input type="button" value="1" size="25" onclick="f.t.value+='1'"/>&nbsp&nbsp
+<input type="button" value="2" size="25" onclick="f.t.value+='2'"/>&nbsp&nbsp
+<input type="button" value="3" size="25" onclick="f.t.value+='3'"/>&nbsp&nbsp
+<input type="button" value="-" size="25" onclick="f.t.value+='-'"/><br><br>
+<input type="button" value="0" size=30 onclick="f.t.value+='0'"/>&nbsp&nbsp
+<input type="button" value="." size=30 onclick="f.t.value+='.'"/>&nbsp&nbsp
+<input type="button" value="+" size=30 onclick="f.t.value+='+'"/>&nbsp&nbsp
+<input type="button" value="=" size=30 onclick="f.t.value=eval(f.t.value)"/><br><br>
+<input type="button" id="clear" value="clear"  size=40 onclick="clear()"/>&nbsp&nbsp
+<br><br><input type="text" id="yes" style="border-color:red" size="25" name="t" /><br><br>
+<button type="button" onclick="overlap()" id="click">Thanks!</button>
+</form>
+</center>
+</body>
+</html>

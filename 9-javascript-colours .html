@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script colours</title>
+    <script>
+      
+      function calculate()
+      {
+          var x;
+          x=parseInt(lol.value)
+         
+
+          if(x==800)
+          {
+            document.getElementById("pog").style.background='lightgreen'
+            alert(" " + x + " Is the correct answer!");
+            
+            
+          }
+          else if(x!==800)
+          {
+              document.getElementById("pog").style.background='red'
+              alert(" " + x + " is not the correct answer");
+          }
+      }
+
+
+
+
+
+    </script>
+</head>
+<body id="pog">
+    <center>
+        <h1>Background Color</h1>
+        <button name="t" onclick="document.getElementById('pog').style.background='lightpink'">Pink</button>
+        <button type="button" name="t" onclick="document.getElementById('pog').style.background='#CD5C5C'" >Indian red </button>
+        <button type="button" name="t" onclick="document.getElementById('pog').style.background='Yellow'" >Yellow </button>
+        <button type="button" name="t" onclick="document.getElementById('pog').style.background='Thistle'" >Thistle </button> 
+        <button type="button" name="t" onclick="document.getElementById('pog').style.background='cyan'" >Cyan </button>
+     </center>
+    <center>
+     <h1>Can you solve this???</h1>
+     <h2>100+(300-100)+250x2</h2>
+     <input type="text" id="lol">
+     <button id="calculate" onclick="calculate()">Calculate</button>
+
+
+    </center>
+</body>
+</html>

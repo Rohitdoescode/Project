@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branching statements</title>
+
+    <script type="text/javascript">
+    function start()
+
+    {
+        var name=prompt("Do you wanna start chatting?")
+        if (name=="yes")
+        { 
+            document.write(" <p> Nice! click the button to continue</p> <button id=\"anotherbutton\" onclick=\"pog()\">Start</button>") 
+            
+        }
+        else if (name=="Yes")
+        { 
+            document.write(" <p> Nice! click the button to continue</p> <button id=\"anotherbutton\" onclick=\"pog()\">Start</button>")
+            
+        }
+        else if (name=="no")
+        {
+        document.write ("<p> Well that is sad </p>");
+        }
+        else if (name=="No")
+        {
+            document.write("<p> Well that is really sad </p>")
+        }
+        else 
+        {
+           document.write ("<p> so I can confrim that isn't a yes or a no so im not sure what you want try phrasing to either yes or no </p>");
+        }
+        
+
+    }
+    
+    function pog()
+{
+  var name=prompt ("what is your name")
+ 
+  if (name!=null && name!="")
+  {
+      document.write (" <p> > Hello are you  " + name + "? </p> <button id=\"pogbuttona\" onclick=\"pogbuttona()\">yes</button> <button id=\"pogbuttonb\" onclick=\"pogbuttonb()\">No</button>")
+
+    
+  }
+  
+}
+    
+
+   function pogbuttona()
+
+   {
+
+   document.write(" <p> > Oh Hi my name is Rogibear </p>")
+
+   Chating()
+
+   }
+
+   function Chating()
+   { 
+       document.write ("<button id=\"good\" onclick=\"goodman()\" onclick=\"ayo()\"> A.Hi how are you </button> <button id=\"medium\" onclick=\"mediumman()\" onclick=\"ayo()\"> B.Bro who even are you</button> <button id=\"bad\" onclick=\"badman()\" onclick=\"ayo()\"> C. Bro screw you bye </button>")  
+       document.write ("<input type=\"text\" readonly size=\"25\" id=\"HeHe\">")
+       document.write("<button id=\"yey\" onclick=\"KEKW()\"> Send </button>")
+   }
+
+
+      function KEKW()
+      {
+        var HeHe = document.getElementById("HeHe");
+       
+       
+        if (HeHe.value=="hey how are you?")
+        {
+            document.write ("<br> <br> (you) >Hey how are you?")
+            document.write("<br> <br> > I am good! How are you? <button onclick=\"Poggers()\">Im good!</button> <button onclick=\"okbro()\">Im doing bad</button>")
+
+        }
+        else if (HeHe.value=="Bro who even are you?")
+        {
+            document.write (" <br> <br> > I am rogibear You are chatting with me right now? <button onclick=\"score()\"> Oh ok </button>")
+
+            
+        }
+        else if (HeHe.value=="Bro screw you!!")
+        {
+            document.write (">I uh- You were the one who was chatting to me!?? <button onclick=\"score()\"> FINE! </button>")
+
+            
+            
+        }
+
+      }    
+          
+      
+
+
+      function goodman()
+      {
+        document.getElementById("HeHe").value = "hey how are you?"
+      }
+
+
+      function mediumman()
+      {
+        document.getElementById("HeHe").value = "Bro who even are you?"
+      
+
+      }
+
+
+    
+
+      function badman()
+    {   
+        document.getElementById("HeHe").value = "Bro screw you!!"
+
+
+    }
+
+
+
+
+
+   function pogbuttonb()
+   {
+     document.write ("<p> wha- but you just entered your name how about you try that again</p> <button onclick=\"pog()\">ok</button>")  
+
+
+   }
+  
+   
+    function Poggers()
+    {
+        document.write("<br> <br> That's amazing to hear! <br> <br> <button onclick=\"score()\"> Thanks! </button>")
+    }
+
+    function okbro()
+    {
+        document.write("<br> <br>Oh... im sorry to hear that <button onclick=\"score()\"> yea... </button>")
+    }
+    
+    function score()
+    {
+        document.write("<br> <br>do you wanna play a game <br> <br> <button onclick=\"actually()\"> Yes! </button> <button onclick=\"pepecry()\"> no </button>")
+    }
+
+
+    function actually()
+    {
+        document.write("<br> <br> Type a number in this text box and then ill tell you if this number is higher or lower than the number im guessing <br> <br> then Type in the number you think it is and I'll tell you whether it is correct or wrong")
+        document.write("<br> <br> <br> <br> <input type=\"text\" id=\"pogchamp\" size=\"25\"> ") 
+        document.write("<br> <button onclick=\"lol()\"> High or low in alert box </button>")
+        document.write("<button onclick=\"lol2()\"> High or low in textbox </button>")
+        document.write("<button onclick=\"lol3()\"> high or low in webpage </button>")
+        document.write("<br> <br> <input type=\"text\" readonly id=\"chee\" size=\"25\">") 
+        document.write(" <br> <br> <input type=\"text\" id=\"nah\" size=\"25\"> <button onclick=\"almost\"> calculate </button>")
+    }
+    
+    function lol()
+    { 
+        var x;
+        x=parseInt(pogchamp.value)
+        
+        if (x > 45)
+        {
+            alert(" " + x + " Is higher than the number im guessing!");
+        }
+        else if (x < 45)
+        {
+            alert(" " + x + " Is lower than the number im guessing!");
+        }
+        else if (x==45)
+        {
+            alert(" " + x +" Is exactly the number im guessing!")
+        }
+    }
+
+    function lol2()
+    
+      {
+
+        var x, y;
+        x=parseInt(pogchamp.value)
+        y=(chee.value)
+        
+        if (x > 45)
+        {
+            document.getElementById("chee").value=" " + x + " is higher than the number im guessing"
+        }
+        else if (x < 45)
+        {
+            document.getElementById("chee").value=" " + x + " is lower than the number im guessing"
+        }
+        else if (x==45)
+        {
+            document.getElementById("chee").value=" " + x + " is the exact number im guessing"
+        }
+    }
+
+    function lol3()
+    {
+
+var x;
+x=parseInt(pogchamp.value)
+
+if (x > 45)
+{
+    document.write(" <br> <br> " + x + " is higher than the number im guessing ").style.color = 'green'
+}
+else if (x < 45)
+{
+    document.write(" <br> <br>  " + x + " is lower than the number im guessing")
+}
+else if (x==45)
+{
+    document.write(" <br> <br> " + x + " is the exact number im guessing!")
+}
+}
+
+
+
+   function almost()
+   {
+       var x;
+       x =parseInt(nah.value)
+       if (x!==45)
+       {
+           document.write(" your number " + x + " is not the number im guessing")
+       }
+       else if (x==45)
+       {
+           document.write(" your number " + x + "  is the number im guessing!")
+       }
+
+   }
+
+
+ 
+    </script>
+
+</head>
+<body>
+    <h1> chatting </h1>
+   <button button type="button" id="b1"  onclick="start()">Confrim</button> 
+   
+</body>
+</html>

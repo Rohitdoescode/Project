@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js operators</title>
+    <script>
+        function Add()
+        {
+            var x,y,z;
+        x = parseInt(a.value)
+        y = parseInt(b.value)
+
+        z = x + y
+        document.getElementById("c").value=z
+        }      
+        function Sub()
+        {
+            var x,y,z;
+            x = parseInt(a.value)
+            y = parseInt(b.value)
+        z = x - y
+        document.getElementById("c").value=z
+        }
+    </script>
+</head>
+<body>
+    <center>
+    First value<input type="text" id="a"> 
+    <br><br>
+    Second value<input type="text" id="b">
+    <br><br>
+    <button onclick="Add()">Add</button> &nbsp &nbsp <button onclick="Sub()">Subtract</button>
+    <br><br>
+   Result: <input type="text" id="c">
+   <br><br>
+   <a href="home.html"><button>Return to home</button></a>
+    </center>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Loop() 
+        {
+        var limit;
+        var txt = "", storage = 1;
+        limit = parseInt(form1.tb1.value); 
+        while (storage <= limit) 
+        {
+        txt += +storage + "<br>";
+        storage=storage+1 
+        }
+        document.getElementById("num").innerHTML = txt;
+        alert("Here are all the numbers till the limit")
+        }
+        function mulTab() 
+        {
+        var n,t;
+        var txt = "", i = 0;
+        n = parseInt(form1.tb1.value);
+        t = parseInt(form1.tb3.value);
+        var v=t;
+        do 
+        {
+        document.getElementById("multi").innerHTML +=i+1+"*"+v+"="+ t
+        
+        + "<br>";
+        
+        t = t + v;
+        i++;
+        }while (i < n);
+        alert("now here is all the numbers to the limit divded by your second number")
+        }
+        </script>
+</head>
+<body>
+    <form id="form1">
+        <h1>Enter a digit!!!!</h1>
+        Enter a number!: <input type="text" id="tb1">
+       <br><br> Enter another number<input type="text" id="tb3">
+        <br><br><button type="button" onclick="Loop()">Now click me!</button>
+       <button type="button" onclick="mulTab()">Or click me to multiply</button>
+        <p id="multi"></p>
+        <p id="num"></p>
+        
+        
+    
+</body>
+</html>

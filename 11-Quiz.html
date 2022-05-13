@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script>
+        function Quiz()
+        {
+            var sum = 0;
+if (document.getElementById('pog2').checked) 
+{
+sum += 1;
+}
+if (document.getElementById('pogo4').checked)
+ {
+sum += 1
+}
+if (document.getElementById('lol1').checked) 
+{
+sum += 1
+}
+if (sum == 0) 
+{
+alert("hm your score is " + sum + " you didn't pass :(  ");
+document.getElementById('cool').style.backgroundColor= "Red"
+}
+else if (sum == 1)
+ {
+alert("hm your score is " + sum + " try doing it again ");
+document.getElementById('cool').style.backgroundColor= "Red"
+}
+else if (sum == 2) 
+{
+alert("Congrats your score is  " + sum + " you just passed ");
+document.getElementById('cool').style.backgroundColor= "Yellow"
+}
+else 
+{
+alert("Congrats! your score is " + sum + " You passed! " );
+document.getElementById('cool').style.backgroundColor= "Green"
+}
+
+
+
+
+}
+    </script>
+</head>
+<body id="cool">
+    <center>
+    <h1>QUIZ</h1> 
+    <h2> Which year Did india gain independence</h2>
+    <input id="pog" type="radio"> 1999
+    <input id="pog2" type="radio"> 1945
+    <input id="pog3" type="radio"> 1776
+    <input id="pog4" type="radio"> 1889
+    </center>
+    <br> <br> <br>
+    <center>
+    <h2>What is the largest wall in the world! you can even see this from space</h2>
+    <input id="pogo1" type="radio"> I dont know just a wall?
+    <input id="pogo2" type="radio"> Korean demilitarized zone
+    <input id="pogo3" type="radio">  hungarien border wall
+    <input id="pogo4" type="radio"> Great wall of china 
+    </center>
+    <br> <br> <br>
+    <center>
+        <h2>what is 250 x 2 </h2>
+    <input id="lol1" type="radio"> 500
+    <input id="lol2" type="radio"> 250
+    <input id="lol3" type="radio"> 252
+    <input id="lol4" type="radio"> 300
+    <br> <br>
+    <button onclick="Quiz()">Sumbit</button>
+    </center>
+    
+</body>
+</html>

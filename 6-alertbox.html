@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <script type="text/javascript">
+    function msgAlert()  {
+           var x;
+           x=f1.tb1.value;
+           alert("hi " + x + " Welcome!");
+           document.getElementById("p1").innerHTML="<h1>Hi " + x + " Welcome :D!</h1>";
+           document.getElementById("tb3").value="Hi " + x + " WELCOME!"
+        
+        
+        }
+    </script>
+</head>
+<body>
+    <form id="f1">
+        <h1>Sighn up (alert)</h1>
+              Name: <input type="text" size="15" id="tb1"><br> <br>
+              password <input type="text" size="15" id="tb2"><br> <br>
+               <button type="button" id="b1"  onclick="msgAlert()">Confrim</button> 
+               <font color="blue"> <p id="p1">Welcome</p> </font>  
+               Click this link to continue:<input type="text" size="25" id="tb3"><br>
+               
+               >
+      </form>
+    
+</body>
+</html>
